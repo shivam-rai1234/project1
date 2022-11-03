@@ -18,6 +18,9 @@ public class ContactEntity {
 	private String Contact_Name;
 	private int contact;
 	private String support;
+	private int Support_Id;
+	
+	//Using Getter and setters
 	public Integer getId() {
 		return id;
 	}
@@ -42,7 +45,13 @@ public class ContactEntity {
 	public void setSupport(String support) {
 		this.support = support;
 	}
+	public int getSupport_Id() {
+		return Support_Id;
+	}
+	public void setSupport_Id(int support_Id) {
+		Support_Id = support_Id;
+	}
 
-//Using Getter and setters
+
 	
 }
