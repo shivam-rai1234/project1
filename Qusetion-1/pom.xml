@@ -8,15 +8,11 @@
 		<version>2.7.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-<<<<<<< HEAD
-	<groupId>com.finalassesment</groupId>
-=======
-	<groupId>com.example</groupId>
->>>>>>> f9672823c092229d9f17b0c244359f615bdea176
-	<artifactId>ques1</artifactId>
+	<groupId>com.qs</groupId>
+	<artifactId>Qusetion-1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ques1</name>
-	<description>Demo project for Spring Boot</description>
+	<name>Qusetion-1</name>
+	<description>Project for Saynam</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
