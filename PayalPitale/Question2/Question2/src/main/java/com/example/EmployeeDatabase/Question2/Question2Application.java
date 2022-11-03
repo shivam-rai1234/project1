@@ -1,13 +1,13 @@
-package com.anamtamboli.que2anam;
+package com.example.EmployeeDatabase.Question2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Que2anamApplication {
+public class Question2Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Que2anamApplication.class, args);
+		SpringApplication.run(Question2Application.class, args);
 	}
 
 }

@@ -1,14 +1,13 @@
-package com.example.shubham;
+package com.anamtamboli.que2anam;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ShubhamApplicationTests {
+class Que2anamApplicationTests {
 
 	@Test
 	void contextLoads() {
 	}
 
 }
-
