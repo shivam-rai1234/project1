@@ -8,11 +8,7 @@
 		<version>2.7.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-<<<<<<< HEAD
 	<groupId>com.finalassesment</groupId>
-=======
-	<groupId>com.example</groupId>
->>>>>>> f9672823c092229d9f17b0c244359f615bdea176
 	<artifactId>ques1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ques1</name>
