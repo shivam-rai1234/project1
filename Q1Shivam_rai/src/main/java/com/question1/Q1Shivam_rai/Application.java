@@ -1,13 +1,13 @@
-package com.question1.Shivam_rai;
+package com.question1.Q1Shivam_rai;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ShivamRaiApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ShivamRaiApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
