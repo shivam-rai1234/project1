@@ -1,4 +1,4 @@
-package com.Q2.Q2Piyush;
+package com.Q3.Q3Piyush;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -9,14 +9,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Q2PiyushApplicationTests {
+class Q3PiyushApplicationTests {
+	@Autowired
+	private EmployeeeeRepository er;
 
 	@Test
 	void contextLoads() {
-
-		Controller c = new Controller();
-		List<String> answer = c.getdata();
-		assertEquals(answer.size(), 3);
+		Boolean check = er.existsById(5);
+		assertEquals(check, true);
 	}
 
 }
