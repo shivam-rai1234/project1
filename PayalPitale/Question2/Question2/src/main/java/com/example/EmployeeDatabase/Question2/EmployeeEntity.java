@@ -7,7 +7,14 @@ import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
+<<<<<<< HEAD
+/**
+ * @author PayalPitale
+ *
+ */
+=======
  
+>>>>>>> branch 'dev' of https://github.com/shivam-rai1234/project1.git
 @Entity
 @Table(name="employee")
 
