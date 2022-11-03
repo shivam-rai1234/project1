@@ -8,6 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 
+/**
+ * @author VishaliMore
+ *
+ */
 @RestController
 public class StudentController {
 	
