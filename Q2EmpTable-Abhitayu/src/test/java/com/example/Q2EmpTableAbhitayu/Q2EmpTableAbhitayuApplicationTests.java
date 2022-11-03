@@ -1,14 +1,13 @@
-package com.example.shubham;
+package com.example.Q2EmpTableAbhitayu;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ShubhamApplicationTests {
+class Q2EmpTableAbhitayuApplicationTests {
 
 	@Test
 	void contextLoads() {
 	}
 
 }
-

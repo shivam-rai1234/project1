@@ -1,14 +1,13 @@
-package com.example.shubham;
+package com.question2.question2_mashir;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ShubhamApplicationTests {
+class Question2MashirApplicationTests {
 
 	@Test
 	void contextLoads() {
 	}
 
 }
-
