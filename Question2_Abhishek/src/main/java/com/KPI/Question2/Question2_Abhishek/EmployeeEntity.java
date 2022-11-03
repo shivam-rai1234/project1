@@ -33,5 +33,3 @@ public void setEmployee_salary(String employee_salary) {
 	this.employee_salary = employee_salary;
 }
 }
-
-  

@@ -1,25 +1,30 @@
-package com.example.EmployeeDatabase.Question2;
+package com.example.question2.shubhamquestion2;
+//package com.example.question2.Q2Shubham;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
 
+<<<<<<< HEAD
 /**
  * @author PayalPitale
  *
  */
+=======
+ 
+>>>>>>> branch 'dev' of https://github.com/shivam-rai1234/project1.git
 @Entity
-@Table(name = "employee")
-public class EmployeeEntity {
-	@Id
-	@GeneratedValue(strategy= GenerationType.AUTO)
-	
+@Table(name="employee")
 
+public class EmployeeEntity{
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
 	private String employee_name;
-	private Integer employee_salary;
+	private String salary;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -32,14 +37,17 @@ public class EmployeeEntity {
 	public void setEmployee_name(String employee_name) {
 		this.employee_name = employee_name;
 	}
-	public Integer getEmployee_salary() {
-		return employee_salary;
+	public String getSalary() {
+		return salary;
 	}
-	public void setEmployee_salary(Integer employee_salary) {
-		this.employee_salary = employee_salary;
+	public void setSalary(String salary) {
+		this.salary = salary;
 	}
 	
 	
-
-
+	
+	
+	
+	
 }
+

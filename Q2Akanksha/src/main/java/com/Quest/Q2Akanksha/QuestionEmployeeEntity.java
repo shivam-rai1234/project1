@@ -13,6 +13,10 @@ public class QuestionEmployeeEntity {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer emp_id;
+	private Integer emp_salary;
+	private String emp_name;
+	
+	
 	public Integer getEmp_id() {
 		return emp_id;
 	}
@@ -26,7 +30,7 @@ public class QuestionEmployeeEntity {
 		this.emp_name = emp_name;
 	}
 	
-	private String emp_name;
+
 	public Integer getEmp_salary() {
 		return emp_salary;
 	}
@@ -34,7 +38,7 @@ public class QuestionEmployeeEntity {
 		this.emp_salary = emp_salary;
 	}
 
-	private Integer emp_salary;
+	
 	
 	
 }
