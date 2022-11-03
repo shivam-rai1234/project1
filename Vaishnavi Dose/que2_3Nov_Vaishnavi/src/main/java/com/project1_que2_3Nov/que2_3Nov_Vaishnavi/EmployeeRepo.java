@@ -1,0 +1,8 @@
+package com.project1_que2_3Nov.que2_3Nov_Vaishnavi;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface EmployeeRepo extends CrudRepository<EmployeeEntity, Integer>
+{
+	
+}
