@@ -1,14 +1,13 @@
-package com.example.shubham;
+package com.example.Assignmentquestion1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ShubhamApplicationTests {
+class Assignmentquestion1ApplicationTests {
 
 	@Test
 	void contextLoads() {
 	}
 
 }
-
