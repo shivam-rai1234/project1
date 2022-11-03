@@ -1,15 +1,13 @@
-package com.example.ques1;
+package com.example.assignment2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-//Nidhishree Question1
-
 @SpringBootApplication
-public class Ques1Application {
+public class Assignment2Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Ques1Application.class, args);
+		SpringApplication.run(Assignment2Application.class, args);
 	}
 
 }
