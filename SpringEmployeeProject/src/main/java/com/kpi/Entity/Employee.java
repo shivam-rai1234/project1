@@ -1,5 +1,6 @@
 package com.kpi.Entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -18,9 +19,13 @@ public class Employee {
 
 	@Id
 	@GeneratedValue
+	@Column(name = "employeeId")
 	private int employeeId;
 	
+	@Column(name = "employeeName")
 	private String employeeName;
-	private String employeeSalary;
+	
+	@Column(name = "employeeSalary")
+	private int employeeSalary;
 	
 }
