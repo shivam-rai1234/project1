@@ -1,4 +1,4 @@
-package com.example.EmployeeDatabase.Question2;
+package com.example.Employee.Question3;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,10 +6,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-/**
- * @author PayalPitale
- *
- */
 @Entity
 @Table(name = "employee")
 public class EmployeeEntity {
@@ -38,8 +34,5 @@ public class EmployeeEntity {
 	public void setEmployee_salary(Integer employee_salary) {
 		this.employee_salary = employee_salary;
 	}
-	
-	
-
 
 }
