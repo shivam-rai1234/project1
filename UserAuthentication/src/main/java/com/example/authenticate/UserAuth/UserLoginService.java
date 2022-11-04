@@ -11,7 +11,7 @@ public class UserLoginService {
 	@Autowired
 	UserLoginRepo repo;
 
-	public String listAll(String uname, String pass) {
+	public String sign_in(String uname, String pass) {
 		ArrayList<String> transformedvalues = new ArrayList<String>();
 		for (UserLogin chk : repo.findAll()) {
 			UserLogin temp = new UserLogin();
@@ -28,11 +28,11 @@ public class UserLoginService {
 		}
 		String store = transformedvalues.toString();
 
-		String inv="Invalid User";
+		String invalid="Invalid User";
 		String login_user = "Welcome ".concat(store);
 
 		if (transformedvalues.isEmpty()) {
-			return inv;
+			return invalid;
 		} else {
 			return login_user;
 		}

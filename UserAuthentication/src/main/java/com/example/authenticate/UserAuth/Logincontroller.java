@@ -14,7 +14,7 @@ public class Logincontroller {
 
 	@RequestMapping("/login/{uname}/{pass}")
 	public String Show(@PathVariable String uname, @PathVariable String pass) {
-		return ul.listAll(uname, pass);
+		return ul.sign_in(uname, pass);
 	}
 
 }
