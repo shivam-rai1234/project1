@@ -34,6 +34,7 @@ public class ContactController {
 		return cl.getJoin3();
 	}
 
+	// Requesting for only particular support team details
 	@GetMapping("/contact/{name}")
 	public Object ContactEntity(@PathVariable String name) {
 
