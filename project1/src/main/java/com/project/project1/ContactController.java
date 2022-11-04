@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -31,5 +32,26 @@ public class ContactController {
 	public List<ContactEntity> getSample2() {
 
 		return cl.getJoin3();
+	}
+
+	@GetMapping("/contactus/{name}")
+	public ContactEntity ContactEntity(@PathVariable String name) {
+
+		for (ContactEntity chk : cl.findAll()) {
+			ContactEntity temp = new ContactEntity();
+
+			if (name.equals(chk.getContact_Name())) {
+				temp.setId(chk.getId());
+				temp.setContact_No(chk.getContact_No());
+				temp.setContact_Name(chk.getContact_Name());
+				temp.setSupport(chk.getSupport());
+				temp.setSupport_Id(chk.getSupport_Id());
+
+				return temp;
+			}
+
+		}
+		return null;
+
 	}
 }
