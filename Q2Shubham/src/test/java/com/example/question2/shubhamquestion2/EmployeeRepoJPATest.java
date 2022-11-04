@@ -22,7 +22,7 @@ public class EmployeeRepoJPATest {
 	    public void whenApplicationStarts_thenHibernateCreatesInitialRecords() {
 	        List<EmployeeEntity> emp = erjpa.getSample();
 
-	        Assert.assertEquals(emp.size(), 4);
+	        Assert.assertEquals(emp.size(), 3);
 	    }
 	
 }
