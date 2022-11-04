@@ -17,7 +17,7 @@ public class ContactServiceTest {
 	@Autowired
 	private ContactService con;
 
-	// Testing according to your categorize
+	// Testing according to your categories
 
 	@Test
 	public void ContactTest() {

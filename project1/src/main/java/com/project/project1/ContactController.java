@@ -12,21 +12,21 @@ public class ContactController {
 	@Autowired
 	private ContactRepo cl;
 
-	// For Mapping for all the supported team contact details
+	// Requesting for all the supported team contact details
 	@GetMapping("/contact")
 	public List<ContactEntity> getSample() {
 
 		return cl.getJoin1();
 	}
 
-	// For Mapping for all the emergency team contact details
+	// Requesting for only emergency team contact details
 	@GetMapping("/contact/emergency")
 	public List<ContactEntity> getSample1() {
 
 		return cl.getJoin2();
 	}
 
-	// For Mapping for all the Company Support contact details
+	// Requesting for only Company Support contact details
 	@GetMapping("/contact/CompanySupport")
 	public List<ContactEntity> getSample2() {
 
