@@ -3,9 +3,10 @@ package com.project.project1;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Service;
 
-@RestController
+
+@Service
 public class ContactService {
 
 	@Autowired
