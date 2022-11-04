@@ -14,28 +14,28 @@ public class ContactController {
 	private ContactRepo cl;
 
 	// Requesting for all the supported team contact details
-	@GetMapping("/contact")
+	@GetMapping("/contactus")
 	public List<ContactEntity> getSample() {
 
 		return cl.getJoin1();
 	}
 
 	// Requesting for only emergency team contact details
-	@GetMapping("/contact/emergency")
+	@GetMapping("/contactus/emergency")
 	public List<ContactEntity> getSample1() {
 
 		return cl.getJoin2();
 	}
 
 	// Requesting for only Company Support contact details
-	@GetMapping("/contact/CompanySupport")
+	@GetMapping("/contactus/CompanySupport")
 	public List<ContactEntity> getSample2() {
 
 		return cl.getJoin3();
 	}
 
-	@GetMapping("/contactus/{name}")
-	public ContactEntity ContactEntity(@PathVariable String name) {
+	@GetMapping("/contact/{name}")
+	public Object ContactEntity(@PathVariable String name) {
 
 		for (ContactEntity chk : cl.findAll()) {
 			ContactEntity temp = new ContactEntity();
@@ -46,12 +46,10 @@ public class ContactController {
 				temp.setContact_Name(chk.getContact_Name());
 				temp.setSupport(chk.getSupport());
 				temp.setSupport_Id(chk.getSupport_Id());
-
 				return temp;
 			}
-
 		}
-		return null;
-
+		return "Not present In the Support Team Directory";
 	}
+
 }
