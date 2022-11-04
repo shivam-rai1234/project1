@@ -14,7 +14,7 @@ public class ContactController {
 	private ContactRepo cl;
 
 	// Requesting for all the supported team contact details
-	@GetMapping("/contactus")
+	@GetMapping("/contact")
 	public List<ContactEntity> getSample() {
 
 		return cl.getJoin1();
