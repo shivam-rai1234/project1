@@ -16,20 +16,20 @@ public class ContactController {
 	@GetMapping("/contact")
 	public List<ContactEntity> getSample() {
 
-		return cl.getjoin1();
+		return cl.getJoin1();
 	}
 
 	// For Mapping for all the emergency team contact details
 	@GetMapping("/contact/emergency")
 	public List<ContactEntity> getSample1() {
 
-		return cl.getjoin2();
+		return cl.getJoin2();
 	}
 
 	// For Mapping for all the Company Support contact details
 	@GetMapping("/contact/CompanySupport")
 	public List<ContactEntity> getSample2() {
 
-		return cl.getjoin3();
+		return cl.getJoin3();
 	}
 }

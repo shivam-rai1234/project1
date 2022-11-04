@@ -1,6 +1,5 @@
 package com.project.project1;
 
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,17 +14,16 @@ public class ContactService {
 //Create this service class for check in Junit for Database-Springboot Integration
 	public List<ContactEntity> getSample() {
 
-		return cl.getjoin1();
+		return cl.getJoin1();
 	}
-
 
 	public List<ContactEntity> getSample1() {
 
-		return cl.getjoin2();
+		return cl.getJoin2();
 	}
 
 	public List<ContactEntity> getSample2() {
 
-		return cl.getjoin3();
+		return cl.getJoin3();
 	}
 }
