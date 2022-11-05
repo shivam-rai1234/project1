@@ -12,6 +12,10 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @author VrishaliMore
+ *
+ */
 @RestController
 public class BoilerPlateController {
 
@@ -25,7 +29,7 @@ public class BoilerPlateController {
 	//Post Methods
 	
 	@PostMapping("/add") 
-	public BoilerPlateEntity addCode(@RequestBody BoilerPlateEntity code)//this is post method so we need to add @RequestBody 
+	public BoilerPlateEntity addCode(@RequestBody BoilerPlateEntity code) 
 	{ 
 		return bservice.saveallBoilerplate(code); 
 	}
@@ -33,7 +37,7 @@ public class BoilerPlateController {
 	@PostMapping("/addList")
 	public List<BoilerPlateEntity> addCodeList(@RequestBody List<BoilerPlateEntity> listofcode) 
 	{
-		return bservice.saveProductList(listofcode);
+		return bservice.saveCodeList(listofcode);
 	}
 	  
 	 
@@ -60,9 +64,9 @@ public class BoilerPlateController {
 	//update method 
 	
 	  @PutMapping("/update") 
-	  public BoilerPlateEntity updateProduct(@RequestBody BoilerPlateEntity updatecode) 
+	  public BoilerPlateEntity updateCode(@RequestBody BoilerPlateEntity c) 
 	  {
-		  return bservice.updateProduct(updatecode); 
+		  return bservice.updateCode(c); 
 		  
 	  }
 	  
@@ -75,7 +79,7 @@ public class BoilerPlateController {
 		  
 	  }
 	  
-	// in table all boiler plate recordes are fetch
+	// in table all boiler plate records are fetch
 	  
 	  @GetMapping("/boilerplate") 
 	  public ArrayList<String> getdata(){

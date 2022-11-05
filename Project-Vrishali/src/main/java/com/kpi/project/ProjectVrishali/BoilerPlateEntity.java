@@ -7,6 +7,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * @author VrishaliMore
+ *
+ */
 @Entity
 @Table(name="BoilerPlate")
 public class BoilerPlateEntity {
@@ -29,22 +33,6 @@ public class BoilerPlateEntity {
 	@Column
 	private String Reduce_Method;
 
-/*	//Constructor
-	BoilerPlateEntity(){
-		
-	}
-	
-	BoilerPlateEntity(int id, String appliction_name,String BoilerPlate_code,String Reduced_BoilerPlate_Code,String Reduce_Method )
-	{
-		super();
-		this.id=id;
-		this.appliction_name=appliction_name;
-		this.BoilerPlate_code=BoilerPlate_code;
-		this. Reduced_BoilerPlate_Code= Reduced_BoilerPlate_Code;
-		this.Reduce_Method=Reduce_Method;
-		
-	}
-*/
 	//Getter and Setter
 	public Integer getId() {
 		return id;

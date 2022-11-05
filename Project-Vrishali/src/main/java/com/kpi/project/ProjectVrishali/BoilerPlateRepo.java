@@ -6,6 +6,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+/**
+ * @author VrishaliMore
+ *
+ */
 @Repository
 public interface BoilerPlateRepo extends JpaRepository<BoilerPlateEntity, Integer>{
 	

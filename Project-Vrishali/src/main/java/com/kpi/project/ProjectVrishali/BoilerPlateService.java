@@ -4,6 +4,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author VrishaliMore
+ *
+ */
 @Service
 public class BoilerPlateService {
 
@@ -21,7 +25,7 @@ public class BoilerPlateService {
 		return brepo.save(code); 
 	}
 	
-	 public List<BoilerPlateEntity> saveProductList(List<BoilerPlateEntity> boilerplate)
+	 public List<BoilerPlateEntity> saveCodeList(List<BoilerPlateEntity> boilerplate)
 	 {
 		 return brepo.saveAll(boilerplate);
 	 }
@@ -33,14 +37,7 @@ public class BoilerPlateService {
 	  public BoilerPlateEntity getById(int id)
 	  { 
 			return  brepo.findById(id).orElse(null);
-	  }
-	/*	
-	  public BoilerPlateEntity getName(String name) {
-			
-			return brepo.findByAppliction_name(name);
-			
-		}
-	*/	
+	  }	
 	  
 	  // to delete
 	  public String deleteCode(int id) {
@@ -51,7 +48,7 @@ public class BoilerPlateService {
 		}
 	 
 	// to update
-	  public BoilerPlateEntity updateProduct(BoilerPlateEntity p) 
+	  public BoilerPlateEntity updateCode(BoilerPlateEntity p) 
 	  { 
 		  BoilerPlateEntity existingCode= brepo.findById(p.getId()).orElse(null);
 	     existingCode.setAppliction_name(p.getAppliction_name()); 
@@ -61,6 +58,5 @@ public class BoilerPlateService {
 	  
 	  return brepo.save(existingCode); }
 	 
-
 
 }
