@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Home page</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet" type="text/css" />
+        <link th:href="@{/styles/main.css}" rel="stylesheet" />
+    </head>
+    <body>
+    
+    <h2> List of Products </h2>
+      
+      	<div th:if="${ not#lists.isEmpty(items)}">
+          <table>
+            <tr>
+              <th>Product Id</th>
+              <th>Product Name</th>
+              <th>Product Amount</th>
+              <th>Actions</th>
+            </tr>
+            <tr th:each="item : ${items}" align="center">
+              <td th:text="${item.id}" th:title="buy + ' ' + ${item.productName}"></td>
+              <td th:text="${item.productName}" th:title="buy + ' ' + ${item.productName}"></td>
+              <td th:text="${item.amount}" th:title="buy + ' ' + ${item.productName}"></td>
+              <td class="extra" th:onclick="|window.location.href='/addedtocart'|"> Add to cart</td>
+            </tr>
+          <table>
+        </div>
+    </body>
+</html>
