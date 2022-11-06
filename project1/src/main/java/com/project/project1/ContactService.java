@@ -8,6 +8,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ContactService {
+	
+	/**
+	 * @author MashirNizami
+	 *
+	 */
 
 	@Autowired
 	private ContactRepo cl;

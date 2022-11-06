@@ -11,6 +11,11 @@ import javax.persistence.Table;
 //Mention the table name 
 
 public class ContactEntity {
+	
+	/**
+	 * @author MashirNizami
+	 *
+	 */
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
