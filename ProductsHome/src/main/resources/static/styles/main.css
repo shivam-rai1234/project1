@@ -1,5 +1,6 @@
 html {
   font-family: "helvetica neue", helvetica, arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 table {
@@ -14,7 +15,7 @@ tr, td {
 	font-family: sans-serif;
 }
 
-th, h2 {
+h2, th {
 	  font-family: "Rock Salt", cursive;
 }
 
@@ -24,7 +25,7 @@ h1 {
 }
 
 .extra {
-	background-color: green;
+	background-color: #65E29F;
 	margin: 10px;
 	padding: 10px;
 	display: inline-block;
