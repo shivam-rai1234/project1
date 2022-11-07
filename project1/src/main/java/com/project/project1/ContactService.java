@@ -25,11 +25,11 @@ public class ContactService {
 
 	public List<ContactEntity> getSample1() {
 
-		return cl.getJoin2();
+		return cl.getdetail1(112);
 	}
 
 	public List<ContactEntity> getSample2() {
 
-		return cl.getJoin3();
+		return cl.getdetail1(0);
 	}
 }

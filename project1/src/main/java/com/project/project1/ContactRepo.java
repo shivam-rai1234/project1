@@ -10,10 +10,7 @@ public interface ContactRepo extends JpaRepository<ContactEntity, Integer> {
 	@Query(value = "Select * From contact", nativeQuery = true)
 	public List<ContactEntity> getJoin1();
 
-	@Query(value = "Select * From contact where support_id=112", nativeQuery = true)
-	public List<ContactEntity> getJoin2();
-
-	@Query(value = "Select * From contact where support_id=0", nativeQuery = true)
-	public List<ContactEntity> getJoin3();
-
+	@Query(value="SELECT * from contact c where c.support_id= ?1",nativeQuery=true)
+	public List<ContactEntity> getdetail1(Integer support_id);
+	
 }

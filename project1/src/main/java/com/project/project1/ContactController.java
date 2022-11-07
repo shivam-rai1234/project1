@@ -29,14 +29,14 @@ public class ContactController {
 	@GetMapping("/contactus/emergency")
 	public List<ContactEntity> getSample1() {
 
-		return cl.getJoin2();
+		return cl.getdetail1(112);
 	}
 
 	// Requesting for only Company Support contact details
 	@GetMapping("/contactus/CompanySupport")
 	public List<ContactEntity> getSample2() {
 
-		return cl.getJoin3();
+		return cl.getdetail1(0);
 	}
 
 	// Requesting for only particular support team details
