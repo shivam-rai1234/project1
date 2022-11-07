@@ -21,6 +21,7 @@ public class SampleServiceTest {
 	@Test
     public void chngumangu() {
 			
+		
 	List<DependencyEntity> depo_name=a.getSample();
 	 
 	 Assert.assertEquals(depo_name.get(0).getDep_name(),"actuator");
