@@ -20,6 +20,7 @@ public class QueueController {
 	
 	List<Integer> l = new ArrayList<Integer>();
 	List<Integer> l1 = new ArrayList<Integer>();
+	
 	@GetMapping("/fifo/{id}")
 	    public int getfromfirst(@PathVariable int id){
 	        
@@ -39,6 +40,7 @@ public class QueueController {
 			
 	        
 	       }
+	
 	    
 	@GetMapping("/lifo/{id}")
     public int getfromback(@PathVariable int id){
