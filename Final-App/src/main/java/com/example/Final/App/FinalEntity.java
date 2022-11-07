@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "runtime")
+@Table(name = "Runtime")
 public class FinalEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

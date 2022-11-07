@@ -6,6 +6,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.util.StopWatch;
 
+/**
+ * @author SaynamSharma
+ *
+ */
 @SpringBootApplication
 public class DemoApplication
 	implements CommandLineRunner {
@@ -26,7 +30,7 @@ public class DemoApplication
 		long a1 = timeMeasure.getLastTaskTimeMillis();
 		
 		// Inserting the data in the mysql table.
-		runtime first = new runtime(0,a1);
+		Runtime first = new Runtime(0,a1);
 		
 		ob.save(first);
 	

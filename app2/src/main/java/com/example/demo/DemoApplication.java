@@ -1,5 +1,9 @@
 package com.example.demo;
 
+/**
+ * @author SaynamSharma
+ *
+ */
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -26,7 +30,7 @@ public class DemoApplication
 		long a1 = timeMeasure.getLastTaskTimeMillis();
 		
 		// Inserting the data in the mysql table.
-		runtime first = new runtime(0,a1);
+		Runtime first = new Runtime(0,a1);
 		
 		ob.save(first);
 	

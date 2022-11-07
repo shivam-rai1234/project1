@@ -9,6 +9,6 @@ import org.springframework.data.jpa.repository.Query;
 public interface FinalRepo extends JpaRepository<FinalEntity,Integer> {
 
 
-	@Query(value = "select * from runtime c where c.id = ?1",nativeQuery = true)
+	@Query(value = "select * from Runtime c where c.id = ?1",nativeQuery = true)
 	List<FinalEntity> getJoin(Integer id);
 }
