@@ -10,6 +10,7 @@ public class Dependency {
 	@GetMapping("/dependency_of_application/{is}")
 	public String Dependencyappplication(@PathVariable String is) 
 	{
+		
 		 final String dependency1="actuator";
 		  final String dependency2="mysql";
 		  final String dependency3="h2";
