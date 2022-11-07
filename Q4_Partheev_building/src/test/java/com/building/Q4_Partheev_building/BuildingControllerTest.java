@@ -16,18 +16,15 @@ import java.util.List;
 public class BuildingControllerTest {
     
     @Autowired
-    private BuildingRepo br;
+    private BuildingController bc;
     
     @Test
     public void check() {
-        List<BuildingEntity> emp = (List<BuildingEntity>) br.findAll();
-        Assert.assertEquals(emp.size(),10);
-        double expected_total_area=515833.6015625;
-        BuildingController bc =new BuildingController();
-        double actual_total_area= bc.get_total_area();
+        Double expected_total_area=515833.6015625;
+        Double actual_total_area= bc.get_total_area();
         Assert.assertEquals(expected_total_area,actual_total_area);
-        double expected_floor_area=51988.1602;
-        double actual_area=bc.get_area(1);
+        Double expected_floor_area=51988.16015625;
+        Double actual_area=bc.get_area(1);
         Assert.assertEquals(actual_area, expected_floor_area);
     }
 }

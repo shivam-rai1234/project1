@@ -10,11 +10,11 @@ public class BuildingController {
 	@Autowired
 	public BuildingRepo br;
 	@GetMapping("/{floor_number}")
-	public Float get_area(@PathVariable int floor_number) {
-		Float Floor_area=(float) 0;
+	public Double get_area(@PathVariable int floor_number) {
+		Double Floor_area=(double) 0;
 		for(BuildingEntity be:br.findAll()) {
 			if(be.getFloor_num()==floor_number) {
-				Floor_area=be.getFloor_area();
+				Floor_area=(double)be.getFloor_area();
 			}
 		}
 		return Floor_area;
