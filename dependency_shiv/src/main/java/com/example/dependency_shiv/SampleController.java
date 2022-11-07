@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class SampleController {
 	@Autowired
 	private DependencyRepo c1;
-	@GetMapping("/dependency/Actuator")
+	@GetMapping("/dependency/actuator")
 	public List<DependencyEntity> getjoi(){
 		
 		return c1.getjoin(1);
