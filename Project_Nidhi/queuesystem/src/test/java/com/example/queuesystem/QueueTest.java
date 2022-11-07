@@ -15,23 +15,14 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class QueueTest {
 	@Autowired 
-	private QueueRepo qr;
-	List<Integer> l = new ArrayList<Integer>();
+	private QueueController qc;
+	
 	@Test
 	public void check() {
-		Deque<Integer> deque=new ArrayDeque<Integer>(); 
-        for(QueueEntity emt:qr.findAll()) {
-        	
-        	int val = emt.getId();
-        	deque.offer(val);
-            }
+		
         
-        for (int i :deque) {
-        	l.add(i);
-        	
-	    }
-        
-		Assert.assertEquals(l.indexOf(2),1);
+		Assert.assertEquals(qc.getfromfirst(2),1);
+		Assert.assertEquals(qc.getfromback(10),0);
 	}
 
 }
