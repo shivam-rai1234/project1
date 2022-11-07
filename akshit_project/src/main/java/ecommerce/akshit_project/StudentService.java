@@ -22,11 +22,11 @@ public List<Student> listAll() {
         repo.save(std);
     }
     
-    public Student get(long id) {
+    public Student get(Integer id) {
         return repo.findById(id).get();
     }
     
-    public void delete(long id) {
+    public void delete(Integer id) {
         repo.deleteById(id);
     }
  

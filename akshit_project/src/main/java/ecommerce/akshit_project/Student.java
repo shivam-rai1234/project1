@@ -15,27 +15,27 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="students")
+@Table(name="student")
 public class Student {
 @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
     private String studentname;
     private String course;
-    private int fee;
+    private Integer fee;
 public Student() {
  
 }
-public Student(Long id, String studentname, String course, int fee) {
+public Student(Integer id, String studentname, String course, Integer fee) {
 this.id = id;
 this.studentname = studentname;
 this.course = course;
 this.fee = fee;
 }
-public Long getId() {
+public Integer getId() {
 return id;
 }
-public void setId(Long id) {
+public void setId(Integer id) {
 this.id = id;
 }
 public String getStudentname() {
@@ -50,10 +50,10 @@ return course;
 public void setCourse(String course) {
 this.course = course;
 }
-public int getFee() {
+public Integer getFee() {
 return fee;
 }
-public void setFee(int fee) {
+public void setFee(Integer fee) {
 this.fee = fee;
 }
  
