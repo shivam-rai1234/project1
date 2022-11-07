@@ -18,6 +18,7 @@ package com.example.finalprojectshubham;
 	        for(EngineerEntity emt:a.findAll()) {
 	        	EngineerEntity temp=new EngineerEntity();
 	            temp.setEngineer_id(emt.getEngineer_id());
+	            temp.setEngineer_name(emt.getEngineer_name());
 	            temp.setQuestion_asked(emt.getQuestion_asked());
 	            
 	            transformedvalues.add(temp);
