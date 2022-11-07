@@ -19,7 +19,7 @@ public class BuildingControllerTest {
         Double expected_total_area=515833.6015625;
         Double actual_total_area= bc.get_total_area();
         Assert.assertEquals(expected_total_area,actual_total_area);
-        Float expected_floor_area=51988.1602f;
+        Float expected_floor_area=51988.16f;
         Float actual_area=bc.get_area(1);
         Assert.assertEquals(actual_area, expected_floor_area);
     }
